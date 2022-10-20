@@ -1,1 +1,38 @@
-/* styles go here */
+body {
+  background: #fff;
+  margin: 0;
+  --margin-horizontal: 20px;
+}
+
+.block {
+  border: black solid 1px;
+  margin: 10px 10px var(--margin-horizontal);
+  padding: 5px 10px;
+}
+
+.block:hover {
+  background: #e9e9e9;
+}
+
+label {
+  padding: 5px 0;
+  display: block;
+}
+
+.button {
+  margin: 10px var(--margin-horizontal);
+}
+
+.registration :invalid {/* якщо тут прибрати пробіл після registration, 
+    то рамки не підсвічуються. А на відео у Міши  
+    пробілу немає і все працює. То в чому справа? */
+  border: 2px solid red;
+}
+
+.inline {
+  display: inline;
+}
+
+form {
+  margin: 0 0 10px;
+}
