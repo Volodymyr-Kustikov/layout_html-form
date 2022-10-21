@@ -1,38 +1,18 @@
-body {
-  background: #fff;
-  margin: 0;
-  --margin-horizontal: 20px;
-}
-
-.block {
-  border: black solid 1px;
-  margin: 10px 10px var(--margin-horizontal);
-  padding: 5px 10px;
-}
-
-.block:hover {
-  background: #e9e9e9;
-}
-
-label {
-  padding: 5px 0;
+.label {
+  margin-bottom: 10px;
   display: block;
 }
 
-.button {
-  margin: 10px var(--margin-horizontal);
+.label:last-child {
+  margin-bottom: 0;
 }
 
-.registration :invalid {/* якщо тут прибрати пробіл після registration, 
-    то рамки не підсвічуються. А на відео у Міши  
-    пробілу немає і все працює. То в чому справа? */
-  border: 2px solid red;
+fieldset {
+  margin-bottom: 20px;
 }
 
 .inline {
-  display: inline;
-}
-
-form {
-  margin: 0 0 10px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
 }
